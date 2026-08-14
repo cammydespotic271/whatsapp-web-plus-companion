@@ -13,10 +13,35 @@ on:
   workflow_call:
 
 jobs:
+  test:
+    # The add-on uses Windows-only APIs such as winreg and PowerShell.
+    if: github.repository != 'nvaccess/addonTemplate'
+    runs-on: windows-latest
+
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.13"]
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v7
+    - name: Install uv
+      uses: astral-sh/setup-uv@v9.0.0
+      with:
+        enable-cache: true
+    - name: Set up Python
+      uses: actions/setup-python@v7
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Run unit tests
+      run: uv run --python ${{ matrix.python-version }} python -m unittest discover -s tests -v
+
   build:
     # Building the add-on template as an add-on does not make sense (and fails).
     # Do not modify this repo name with your own one! (should remain the template)
     if: github.repository != 'nvaccess/addonTemplate'
+
+    needs: ["test"]
 
     runs-on: ubuntu-latest
 
@@ -35,9 +60,6 @@ jobs:
 
     - name: Code checks
       run: export PREK_SKIP=no-commit-to-branch; uv run prek run --all-files
-
-    - name: Run unit tests
-      run: uv run python -m unittest discover -s tests -v
 
     - name: Build add-on
       run: uv run scons && uv run scons pot
