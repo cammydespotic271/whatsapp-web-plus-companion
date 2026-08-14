@@ -94,7 +94,11 @@ class RegistryApi(Protocol):
 	def openOrCreateUserLeaf(self, stage: str = "user.openCreate") -> object: ...
 
 	def setUserValue(
-		self, key: object, valueName: str, value: RegistryValue, stage: str = "user.set"
+		self,
+		key: object,
+		valueName: str,
+		value: RegistryValue,
+		stage: str = "user.set",
 	) -> None: ...
 
 	def deleteUserValue(self, key: object, valueName: str, stage: str = "restore.delete") -> None: ...
@@ -129,7 +133,7 @@ class RegistryLease:
 				ownedData=self._temporary.data,
 				operationId=self.operationId or "",
 				phase=phase,
-			)
+			),
 		)
 
 	def acquire(self) -> None:
@@ -297,7 +301,11 @@ class WinRegistry:
 			key.Close()
 
 	def setUserValue(
-		self, key: object, valueName: str, value: RegistryValue, stage: str = "user.set"
+		self,
+		key: object,
+		valueName: str,
+		value: RegistryValue,
+		stage: str = "user.set",
 	) -> None:
 		try:
 			winreg.SetValueEx(key, valueName, 0, value.valueType, value.data)
@@ -332,7 +340,11 @@ class MemoryRegistry:
 		return
 
 	def setUserValue(
-		self, key: object, valueName: str, value: RegistryValue, stage: str = "user.set"
+		self,
+		key: object,
+		valueName: str,
+		value: RegistryValue,
+		stage: str = "user.set",
 	) -> None:
 		self.current = value
 

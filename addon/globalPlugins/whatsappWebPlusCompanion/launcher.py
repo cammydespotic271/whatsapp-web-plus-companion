@@ -50,7 +50,7 @@ _TRANSIENT_INITIAL_ATTACH_ERRORS = frozenset(
 		"websocket.handshake",
 		"websocket.receive",
 		"websocket.send",
-	}
+	},
 )
 
 _UPDATED_BUNDLE_HEALTH_ERRORS = frozenset(
@@ -58,7 +58,7 @@ _UPDATED_BUNDLE_HEALTH_ERRORS = frozenset(
 		"bundle.failed",
 		"bundle.healthMismatch",
 		"bundle.healthTimeout",
-	}
+	},
 )
 
 
@@ -437,7 +437,9 @@ def launchOperation(
 					)
 
 				target, session, health, unregisterSession = reconnect(
-					lambda: _discoverTarget(port), connect, cancelEvent
+					lambda: _discoverTarget(port),
+					connect,
+					cancelEvent,
 				)
 				gateObserver("pageReady")
 				setState(OperationState.ATTACHED)

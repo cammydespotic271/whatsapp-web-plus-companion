@@ -85,7 +85,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			_("&WhatsApp Web Plus Companion"),
 			# Translators: Help text for the add-on submenu under NVDA's Tools menu.
 			_(
-				"Launch or force close Microsoft Store WhatsApp, and manage WhatsApp Web Plus userscript updates."
+				"Launch or force close Microsoft Store WhatsApp, and manage WhatsApp Web Plus userscript updates.",
 			),
 			(
 				# Launch WhatsApp.
@@ -121,7 +121,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 						# Translators: Tools submenu command. The ellipsis is required because activation may show a confirmation dialog.
 						_("Diagnose and repair WebView2 &policy permissions..."),
 						_(
-							"Check the per-user WebView2 policy permissions and offer a repair when the Companion cannot use them"
+							"Check the per-user WebView2 policy permissions and offer a repair when the Companion cannot use them",
 						),
 						self._onDiagnoseRepairMenu,
 					),
@@ -138,7 +138,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 						# Translators: Tools submenu command. The ampersand marks the mnemonic.
 						_("&Check for WhatsApp Web Plus userscript updates"),
 						_(
-							"Check for WhatsApp Web Plus userscript updates and automatically install a newer or changed official version in the Companion"
+							"Check for WhatsApp Web Plus userscript updates and automatically install a newer or changed official version in the Companion",
 						),
 						self._onCheckForScriptUpdatesMenu,
 					),
@@ -298,7 +298,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 					LangChangeCommand(language.replace("-", "_")),
 					text,
 					LangChangeCommand(None),
-				]
+				],
 			)
 			braille.handler.message(text)
 		else:
@@ -334,18 +334,18 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		remainingChannels = self._channelListLabel(result.values.get("remainingChannels"))
 		# Translators: Spoken and brailled when another Registry operation is still active.
 		registryBusyMessage = _(
-			"The Companion is still cleaning up after the previous launch. Wait a moment and try again. If the problem continues, restart NVDA."
+			"The Companion is still cleaning up after the previous launch. Wait a moment and try again. If the problem continues, restart NVDA.",
 		)
 		messages = {
 			# Translators: Spoken and brailled after the companion has loaded successfully.
 			"active": _("WhatsApp {channel} is running with WhatsApp Web Plus Companion.").format(
-				channel=channel
+				channel=channel,
 			),
 			# Translators: Spoken and brailled when a launch command is invoked while a session is active.
 			"operation.busy": _("WhatsApp Web Plus Companion is already running. Close WhatsApp first."),
 			# Translators: Spoken and brailled when the user closes WhatsApp normally.
 			"package.closed": _("WhatsApp {channel} was closed. WhatsApp Web Plus Companion stopped.").format(
-				channel=channel
+				channel=channel,
 			),
 			# Translators: Recovery message when WhatsApp was already open before the companion started.
 			"package.running": _("WhatsApp is already running. Close it normally and try again."),
@@ -355,26 +355,26 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			"processes.busy": _("WhatsApp is already being force closed. Wait for the result."),
 			# Translators: Result when neither Microsoft Store WhatsApp channel has a running process.
 			"processes.none": _(
-				"Neither WhatsApp Stable nor WhatsApp Beta from Microsoft Store was running."
+				"Neither WhatsApp Stable nor WhatsApp Beta from Microsoft Store was running.",
 			),
 			# Translators: Result after every discovered Microsoft Store WhatsApp process was closed.
 			"processes.closed": _(
-				"The Companion force closed every running Microsoft Store WhatsApp Stable and Beta process. It closed {closedCount} in total."
+				"The Companion force closed every running Microsoft Store WhatsApp Stable and Beta process. It closed {closedCount} in total.",
 			).format(closedCount=result.values.get("closedCount", 0)),
 			# Translators: Result when some Microsoft Store WhatsApp processes remain after a force-close attempt.
 			"processes.partial": _(
-				"The Companion force closed {closedCount} Microsoft Store WhatsApp processes, but WhatsApp {remainingChannels} may still be running. Restart Windows before launching the Companion again."
+				"The Companion force closed {closedCount} Microsoft Store WhatsApp processes, but WhatsApp {remainingChannels} may still be running. Restart Windows before launching the Companion again.",
 			).format(
 				remainingChannels=remainingChannels,
 				closedCount=result.values.get("closedCount", 0),
 			),
 			# Translators: Result when no Microsoft Store WhatsApp process could be force closed or verified.
 			"processes.failed": _(
-				"The Companion could not force close WhatsApp {remainingChannels} from Microsoft Store or confirm that it had closed. Restart Windows before launching the Companion again."
+				"The Companion could not force close WhatsApp {remainingChannels} from Microsoft Store or confirm that it had closed. Restart Windows before launching the Companion again.",
 			).format(remainingChannels=remainingChannels),
 			# Translators: Recovery message when force close is unavailable in the current NVDA context.
 			"processes.context": _(
-				"The Companion cannot force close WhatsApp in this NVDA session. Unlock Windows and run NVDA normally, not as administrator."
+				"The Companion cannot force close WhatsApp in this NVDA session. Unlock Windows and run NVDA normally, not as administrator.",
 			),
 			# Translators: Recovery message after renderer reconnection has failed.
 			"cdp.reconnect": _("The companion connection was lost. Close WhatsApp, then launch it again."),
@@ -386,121 +386,121 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			"registry.busy": registryBusyMessage,
 			# Translators: Recovery message when the named Registry mutex cannot be created.
 			"registry.mutex.createFailed": _(
-				"The Companion could not safely access the Windows Registry. Restart NVDA and try again. If the problem continues, report the error."
+				"The Companion could not safely access the Windows Registry. Restart NVDA and try again. If the problem continues, report the error.",
 			),
 			# Translators: Recovery message when Windows fails while checking Registry mutex ownership.
 			"registry.mutex.waitFailed": _(
-				"Windows could not confirm whether another Companion operation was using the Registry. Restart NVDA and try again. If the problem continues, report the error."
+				"Windows could not confirm whether another Companion operation was using the Registry. Restart NVDA and try again. If the problem continues, report the error.",
 			),
 			# Translators: Recovery message while another Companion Registry operation owns the mutex.
 			"registry.mutex.busy": registryBusyMessage,
 			# Translators: Recovery message when machine-wide WebView2 policy cannot be read.
 			"registry.machine.readAccessDenied": _(
-				"Windows blocked access to the computer-wide WebView2 policy setting. Contact your administrator."
+				"Windows blocked access to the computer-wide WebView2 policy setting. Contact your administrator.",
 			),
 			# Translators: Recovery message for an unexpected machine-wide WebView2 policy read failure.
 			"registry.machine.readFailed": _(
-				"The computer-wide WebView2 policy setting could not be checked. Contact your administrator or report the error."
+				"The computer-wide WebView2 policy setting could not be checked. Contact your administrator or report the error.",
 			),
 			# Translators: Recovery message when this exact WhatsApp channel is controlled by machine policy.
 			"registry.machine.policyAumid": _(
-				"A Windows policy controls the WebView2 launch settings for this WhatsApp channel. The Companion cannot override the policy, so it left the settings unchanged. Contact your administrator for help."
+				"A Windows policy controls the WebView2 launch settings for this WhatsApp channel. The Companion cannot override the policy, so it left the settings unchanged. Contact your administrator for help.",
 			),
 			# Translators: Recovery message when a wildcard WebView2 argument is controlled by machine policy.
 			"registry.machine.policyWildcard": _(
-				"A Windows policy controls the WebView2 launch settings for all applications. The Companion cannot override the policy, so it left the settings unchanged. Contact your administrator for help."
+				"A Windows policy controls the WebView2 launch settings for all applications. The Companion cannot override the policy, so it left the settings unchanged. Contact your administrator for help.",
 			),
 			# Translators: Recovery message when the per-user WebView2 policy value cannot be read.
 			"registry.user.readAccessDenied": _(
-				"Windows blocked access to the per-user WebView2 policy setting required by the Companion. In NVDA Tools, open WhatsApp Web Plus Companion and choose Diagnose and repair WebView2 policy permissions, then try again."
+				"Windows blocked access to the per-user WebView2 policy setting required by the Companion. In NVDA Tools, open WhatsApp Web Plus Companion and choose Diagnose and repair WebView2 policy permissions, then try again.",
 			),
 			# Translators: Recovery message for an unexpected per-user WebView2 policy read failure.
 			"registry.user.readFailed": _(
-				"The per-user WebView2 policy setting could not be read. Close WhatsApp and try again. If this continues, report the error."
+				"The per-user WebView2 policy setting could not be read. Close WhatsApp and try again. If this continues, report the error.",
 			),
 			# Translators: Recovery message when an existing WebView2 value has an unsupported data type.
 			"registry.user.invalidValueType": _(
-				"An existing per-user WebView2 launch setting has an unsupported data type. The Companion did not change it. Review the setting manually."
+				"An existing per-user WebView2 launch setting has an unsupported data type. The Companion did not change it. Review the setting manually.",
 			),
 			# Translators: Recovery message when a pre-existing debugging argument is not owned by the Companion.
 			"registry.user.debugArgumentPresent": _(
-				"A remote-debugging launch argument already exists for this WhatsApp channel. The Companion did not overwrite it. Permission repair does not remove settings the Companion cannot prove it owns."
+				"A remote-debugging launch argument already exists for this WhatsApp channel. The Companion did not overwrite it. Permission repair does not remove settings the Companion cannot prove it owns.",
 			),
 			# Translators: Recovery message when the per-user WebView2 policy leaf cannot be created or opened.
 			"registry.user.openCreateAccessDenied": _(
-				"Windows did not allow the Companion to create or update its temporary per-user WebView2 launch setting. WhatsApp was not launched. Run Diagnose and repair WebView2 policy permissions from the Companion submenu, then try again."
+				"Windows did not allow the Companion to create or update its temporary per-user WebView2 launch setting. WhatsApp was not launched. Run Diagnose and repair WebView2 policy permissions from the Companion submenu, then try again.",
 			),
 			# Translators: Recovery message for an unexpected leaf open/create failure.
 			"registry.user.openCreateFailed": _(
-				"The temporary per-user WebView2 launch setting could not be created or updated. WhatsApp was not launched. Close WhatsApp and try again. If this continues, report the error."
+				"The temporary per-user WebView2 launch setting could not be created or updated. WhatsApp was not launched. Close WhatsApp and try again. If this continues, report the error.",
 			),
 			# Translators: Recovery message when the temporary value cannot be set.
 			"registry.user.setAccessDenied": _(
-				"Windows did not allow the Companion to create or update its temporary per-user WebView2 launch setting. WhatsApp was not launched. Run Diagnose and repair WebView2 policy permissions from the Companion submenu, then try again."
+				"Windows did not allow the Companion to create or update its temporary per-user WebView2 launch setting. WhatsApp was not launched. Run Diagnose and repair WebView2 policy permissions from the Companion submenu, then try again.",
 			),
 			# Translators: Recovery message for an unexpected temporary value write failure.
 			"registry.user.setFailed": _(
-				"The temporary per-user WebView2 launch setting could not be written. WhatsApp was not launched. Close WhatsApp and try again. If this continues, report the error."
+				"The temporary per-user WebView2 launch setting could not be written. WhatsApp was not launched. Close WhatsApp and try again. If this continues, report the error.",
 			),
 			# Translators: Recovery message when the temporary value read-back does not match.
 			"registry.user.verifyMismatch": _(
-				"The temporary WebView2 launch setting could not be verified after it was written. Close WhatsApp and try again."
+				"The temporary WebView2 launch setting could not be verified after it was written. Close WhatsApp and try again.",
 			),
 			# Translators: Urgent recovery message when the per-user WebView2 setting cannot be opened during restore.
 			"registry.restore.openAccessDenied": _(
-				"The Companion could not restore the previous per-user WebView2 setting. Close WhatsApp now, then run Diagnose and repair WebView2 policy permissions. The Companion will retry the saved restoration before another launch."
+				"The Companion could not restore the previous per-user WebView2 setting. Close WhatsApp now, then run Diagnose and repair WebView2 policy permissions. The Companion will retry the saved restoration before another launch.",
 			),
 			# Translators: Recovery message for an unexpected restore-open failure.
 			"registry.restore.openFailed": _(
-				"The previous per-user WebView2 setting could not be opened for restoration. Close WhatsApp and report the error."
+				"The previous per-user WebView2 setting could not be opened for restoration. Close WhatsApp and report the error.",
 			),
 			# Translators: Urgent recovery message when the owned temporary value cannot be deleted.
 			"registry.restore.deleteAccessDenied": _(
-				"The Companion could not remove its temporary per-user WebView2 setting. Close WhatsApp now, then run Diagnose and repair WebView2 policy permissions. The Companion will retry the saved restoration before another launch."
+				"The Companion could not remove its temporary per-user WebView2 setting. Close WhatsApp now, then run Diagnose and repair WebView2 policy permissions. The Companion will retry the saved restoration before another launch.",
 			),
 			# Translators: Recovery message for an unexpected temporary value deletion failure.
 			"registry.restore.deleteFailed": _(
-				"The temporary per-user WebView2 setting could not be removed. Close WhatsApp and report the error."
+				"The temporary per-user WebView2 setting could not be removed. Close WhatsApp and report the error.",
 			),
 			# Translators: Urgent recovery message when the previous value cannot be written back.
 			"registry.restore.setAccessDenied": _(
-				"The Companion could not restore the previous per-user WebView2 setting. Close WhatsApp now, then run Diagnose and repair WebView2 policy permissions. The Companion will retry the saved restoration before another launch."
+				"The Companion could not restore the previous per-user WebView2 setting. Close WhatsApp now, then run Diagnose and repair WebView2 policy permissions. The Companion will retry the saved restoration before another launch.",
 			),
 			# Translators: Recovery message for an unexpected restore write-back failure.
 			"registry.restore.setFailed": _(
-				"The previous per-user WebView2 setting could not be written back. Close WhatsApp and report the error."
+				"The previous per-user WebView2 setting could not be written back. Close WhatsApp and report the error.",
 			),
 			# Translators: Recovery message when the live value changed outside the Companion.
 			"registry.restore.conflict": _(
-				"The per-user WebView2 setting changed outside the Companion while it was active. The Companion did not overwrite it. Review the per-user WebView2 policy setting manually."
+				"The per-user WebView2 setting changed outside the Companion while it was active. The Companion did not overwrite it. Review the per-user WebView2 policy setting manually.",
 			),
 			# Translators: Recovery message when restored state cannot be verified.
 			"registry.restore.verifyMismatch": _(
-				"The restored per-user WebView2 setting could not be verified. Close WhatsApp and review the per-user WebView2 policy setting manually."
+				"The restored per-user WebView2 setting could not be verified. Close WhatsApp and review the per-user WebView2 policy setting manually.",
 			),
 			# Translators: Recovery message when a saved restoration record cannot be verified for this account.
 			"registry.recovery.unreadable": _(
-				"A saved WebView2 restoration record could not be verified for this Windows account. The Companion did not change it. Contact your administrator or restore the per-user WebView2 policy setting manually."
+				"A saved WebView2 restoration record could not be verified for this Windows account. The Companion did not change it. Contact your administrator or restore the per-user WebView2 policy setting manually.",
 			),
 			# Translators: Status when the required WebView2 policy permissions already exist.
 			"registry.repair.notNeeded": _(
-				"The required WebView2 policy permissions are already available. No changes were made."
+				"The required WebView2 policy permissions are already available. No changes were made.",
 			),
 			# Translators: Status when diagnosis is refused while WhatsApp is running.
 			"registry.repair.whatsappRunning": _(
-				"Close WhatsApp before diagnosing WebView2 policy permissions."
+				"Close WhatsApp before diagnosing WebView2 policy permissions.",
 			),
 			# Translators: Status when diagnosis or repair requires a normal NVDA context.
 			"registry.repair.context": _(
-				"Diagnose and repair requires a normal, non-administrator NVDA session with Windows unlocked."
+				"Diagnose and repair requires a normal, non-administrator NVDA session with Windows unlocked.",
 			),
 			# Translators: Status when the diagnosis cannot determine the condition.
 			"registry.repair.diagnosisFailed": _(
-				"The WebView2 policy permissions could not be diagnosed. Close WhatsApp and try again. If this continues, contact your administrator."
+				"The WebView2 policy permissions could not be diagnosed. Close WhatsApp and try again. If this continues, contact your administrator.",
 			),
 			# Translators: Status stored while the repair confirmation dialog is open.
 			"registry.repair.confirmationRequired": _(
-				"A permission repair is available. Review the confirmation dialog to continue or keep the current permissions."
+				"A permission repair is available. Review the confirmation dialog to continue or keep the current permissions.",
 			),
 			# Translators: Status when the user cancels the Windows permission request.
 			"registry.repair.uacCancelled": _("No permission change was made."),
@@ -508,114 +508,114 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			"registry.repair.helperMissing": _("The repair helper is missing. Reinstall the add-on."),
 			# Translators: Status when the packaged repair helper fails integrity verification.
 			"registry.repair.helperUntrusted": _(
-				"The repair helper could not be verified. Reinstall the add-on from a trusted source."
+				"The repair helper could not be verified. Reinstall the add-on from a trusted source.",
 			),
 			# Translators: Status when Windows or application control blocks the helper.
 			"registry.repair.helperBlocked": _(
-				"Windows blocked the permission repair. Contact your administrator."
+				"Windows blocked the permission repair. Contact your administrator.",
 			),
 			# Translators: Status when the elevated helper exceeds its transaction deadline.
 			"registry.repair.helperTimeout": _(
-				"The permission repair did not finish. Run the diagnosis again before trying again."
+				"The permission repair did not finish. Run the diagnosis again before trying again.",
 			),
 			# Translators: Status when no compatible helper exists for the platform.
 			"registry.repair.unsupportedPlatform": _(
-				"No compatible repair helper is available for this computer."
+				"No compatible repair helper is available for this computer.",
 			),
 			# Translators: Status when the helper cannot verify the requesting NVDA session.
 			"registry.repair.parentIdentityMismatch": _(
-				"The permission repair could not verify this NVDA session. No change was made."
+				"The permission repair could not verify this NVDA session. No change was made.",
 			),
 			# Translators: Status when the requesting user's hive is not loaded.
 			"registry.repair.userHiveUnavailable": _(
-				"Your Windows user profile is not available. Stay logged in and try again."
+				"Your Windows user profile is not available. Stay logged in and try again.",
 			),
 			# Translators: Status when an explicit deny rule blocks effective access.
 			"registry.repair.managedDeny": _(
-				"An administrator deny rule still blocks the WebView2 policy key. The repair did not remove or weaken that rule. Contact your administrator."
+				"An administrator deny rule still blocks the WebView2 policy key. The repair did not remove or weaken that rule. Contact your administrator.",
 			),
 			# Translators: Status when the elevated helper cannot change the DACL.
 			"registry.repair.insufficientAdminRights": _(
-				"The permission repair could not change the Registry permissions. Contact your administrator."
+				"The permission repair could not change the Registry permissions. Contact your administrator.",
 			),
 			# Translators: Status when the DACL change failed before completion.
 			"registry.repair.applyFailed": _(
-				"The permission repair could not be applied. No Registry values were changed."
+				"The permission repair could not be applied. No Registry values were changed.",
 			),
 			# Translators: Status when the post-apply check failed and the original DACL was restored.
 			"registry.repair.verificationFailedRolledBack": _(
-				"The permission repair could not be verified and the original permissions were restored. Contact your administrator."
+				"The permission repair could not be verified and the original permissions were restored. Contact your administrator.",
 			),
 			# Translators: Critical status when the original DACL could not be restored.
 			"registry.repair.rollbackFailed": _(
-				"The permission repair could not restore the original Registry permissions after an error. Do not launch WhatsApp through the Companion until an administrator reviews the per-user WebView2 policy key."
+				"The permission repair could not restore the original Registry permissions after an error. Do not launch WhatsApp through the Companion until an administrator reviews the per-user WebView2 policy key.",
 			),
 			# Translators: Success status after the permission repair.
 			"registry.repair.repaired": _(
-				"WebView2 policy permissions were repaired for your Windows account. No Registry values were changed. Try launching WhatsApp through the Companion again."
+				"WebView2 policy permissions were repaired for your Windows account. No Registry values were changed. Try launching WhatsApp through the Companion again.",
 			),
 			# Translators: Status when the helper reports success but normal access is still blocked.
 			"registry.repair.postVerifyFailed": _(
-				"The permission repair reported success but access is still blocked. Do not launch WhatsApp through the Companion. Contact your administrator."
+				"The permission repair reported success but access is still blocked. Do not launch WhatsApp through the Companion. Contact your administrator.",
 			),
 			# Translators: Status when a saved WebView2 value was restored after the repair.
 			"registry.repair.recoveryRestored": _(
-				"A saved WebView2 setting was restored after the repair. You can launch WhatsApp through the Companion again."
+				"A saved WebView2 setting was restored after the repair. You can launch WhatsApp through the Companion again.",
 			),
 			# Translators: Status when a saved WebView2 value changed outside the Companion.
 			"registry.repair.recoveryConflict": _(
-				"A saved WebView2 setting changed outside the Companion. The Companion did not overwrite it. Review the per-user WebView2 policy setting manually."
+				"A saved WebView2 setting changed outside the Companion. The Companion did not overwrite it. Review the per-user WebView2 policy setting manually.",
 			),
 			# Translators: Recovery message for temporary WebView2 policy failures.
 			"registry": _(
-				"The temporary WebView2 setting could not be restored. Restart NVDA before trying again."
+				"The temporary WebView2 setting could not be restored. Restart NVDA before trying again.",
 			),
 			# Translators: Recovery message for local accessibility connection failures.
 			"transport": _(
-				"WhatsApp opened, but the companion could not connect. Close WhatsApp and try again."
+				"WhatsApp opened, but the companion could not connect. Close WhatsApp and try again.",
 			),
 			# Translators: Recovery message when the bundled userscript does not initialize.
 			"bundle": _(
-				"The bundled WhatsApp Web Plus userscript did not start. Close WhatsApp and try again."
+				"The bundled WhatsApp Web Plus userscript did not start. Close WhatsApp and try again.",
 			),
 			# Translators: Recovery after a downloaded userscript fails its launch health checks.
 			"bundle.updateQuarantined": _(
-				"The downloaded WhatsApp Web Plus userscript did not start and was disabled. Close WhatsApp, then launch it again through the Companion to use the packaged fallback."
+				"The downloaded WhatsApp Web Plus userscript did not start and was disabled. Close WhatsApp, then launch it again through the Companion to use the packaged fallback.",
 			),
 			# Translators: Update result after a newer userscript bundle was selected.
 			"update.updated": _(
-				"WhatsApp Web Plus userscript was updated from version {currentVersion} to {latestVersion}. The new version will be used the next time WhatsApp is launched through the Companion."
+				"WhatsApp Web Plus userscript was updated from version {currentVersion} to {latestVersion}. The new version will be used the next time WhatsApp is launched through the Companion.",
 			).format(
 				latestVersion=result.values.get("latestVersion", ""),
 				currentVersion=result.values.get("currentVersion", ""),
 			),
 			# Translators: Update result when official content changed without a version number change.
 			"update.refreshed": _(
-				"WhatsApp Web Plus userscript was refreshed at version {currentVersion} because the official script differed from the Companion bundle. The refreshed version will be used the next time WhatsApp is launched through the Companion."
+				"WhatsApp Web Plus userscript was refreshed at version {currentVersion} because the official script differed from the Companion bundle. The refreshed version will be used the next time WhatsApp is launched through the Companion.",
 			).format(currentVersion=result.values.get("currentVersion", "")),
 			# Translators: Update status when the bundled userscript version is current.
 			"update.current": _(
-				"The WhatsApp Web Plus userscript is up to date at version {currentVersion}."
+				"The WhatsApp Web Plus userscript is up to date at version {currentVersion}.",
 			).format(currentVersion=result.values.get("currentVersion", "")),
 			# Translators: Recovery message when the userscript update cannot be downloaded.
 			"update.error.network": _(
-				"The WhatsApp Web Plus userscript update could not be downloaded. Check your internet connection and try again. The existing Companion bundle was not changed."
+				"The WhatsApp Web Plus userscript update could not be downloaded. Check your internet connection and try again. The existing Companion bundle was not changed.",
 			),
 			# Translators: Recovery message when a downloaded userscript fails validation.
 			"update.error.validation": _(
-				"The downloaded WhatsApp Web Plus userscript update could not be verified. The existing Companion bundle was not changed."
+				"The downloaded WhatsApp Web Plus userscript update could not be verified. The existing Companion bundle was not changed.",
 			),
 			# Translators: Recovery message when the verified userscript cannot be saved.
 			"update.error.save": _(
-				"The verified WhatsApp Web Plus userscript update could not be installed. The existing Companion bundle was not changed."
+				"The verified WhatsApp Web Plus userscript update could not be installed. The existing Companion bundle was not changed.",
 			),
 			# Translators: Recovery message for an unexpected userscript update failure.
 			"update.error": _(
-				"The WhatsApp Web Plus userscript could not be updated. The existing Companion bundle was not changed."
+				"The WhatsApp Web Plus userscript could not be updated. The existing Companion bundle was not changed.",
 			),
 			# Translators: Status when updating is unavailable in a restricted NVDA context.
 			"update.context": _(
-				"The userscript bundle cannot be updated in this NVDA context. Use a normal NVDA session."
+				"The userscript bundle cannot be updated in this NVDA context. Use a normal NVDA session.",
 			),
 		}
 		message = messages.get(result.messageKey)
@@ -669,8 +669,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		# Translators: Immediate launch progress spoken and brailled after a user command.
 		self._announce(
 			_("Launching WhatsApp {channel} with WhatsApp Web Plus Companion.").format(
-				channel=self._channelLabel(channel.value)
-			)
+				channel=self._channelLabel(channel.value),
+			),
 		)
 
 	def _startRegistryDiagnosis(self) -> None:
@@ -844,7 +844,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				MessageDialog(
 					gui.mainFrame,
 					_(
-						"WhatsApp is currently running. The Companion must force close all Microsoft Store WhatsApp Stable and Beta processes before it can diagnose WebView2 policy permissions. Active calls and file transfers will be interrupted, and text you have not sent may be lost. Do you want to force close WhatsApp and continue the diagnosis? If a repair is needed, you will review a separate confirmation before Windows asks for administrator approval."
+						"WhatsApp is currently running. The Companion must force close all Microsoft Store WhatsApp Stable and Beta processes before it can diagnose WebView2 policy permissions. Active calls and file transfers will be interrupted, and text you have not sent may be lost. Do you want to force close WhatsApp and continue the diagnosis? If a repair is needed, you will review a separate confirmation before Windows asks for administrator approval.",
 					),
 					# Translators: Title of the confirmation shown when permission diagnosis requires closing WhatsApp.
 					_("Close WhatsApp to continue diagnosis?"),
@@ -860,7 +860,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 					# Translators: Destructive button that closes WhatsApp and resumes permission diagnosis.
 					label=_("&Force close WhatsApp and continue"),
 					callback=self._startForceCloseForRegistryDiagnosis,
-				)
+				),
 			)
 		except Exception:
 			log.exception("Unexpected WhatsApp Web Plus Companion diagnosis close confirmation failure")
@@ -879,13 +879,15 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			return
 		generation = self._generation
 		if not self.controller.forceClose(
-			lambda result: self._resumeRegistryDiagnosisAfterForceClose(generation, result)
+			lambda result: self._resumeRegistryDiagnosisAfterForceClose(generation, result),
 		):
 			self._report(OperationResult(False, "processes.busy", "processes.busy", {}), defer=True)
 			return
 		# Translators: Progress after the user chooses to close WhatsApp and continue permission diagnosis.
 		self._announce(
-			_("Force closing Microsoft Store WhatsApp Stable and Beta processes before continuing diagnosis.")
+			_(
+				"Force closing Microsoft Store WhatsApp Stable and Beta processes before continuing diagnosis.",
+			),
 		)
 
 	def _resumeRegistryDiagnosisAfterForceClose(
@@ -930,7 +932,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				MessageDialog(
 					gui.mainFrame,
 					_(
-						"WhatsApp Web Plus Companion needs a temporary WebView2 launch setting before starting WhatsApp. Windows is blocking the per-user Registry key that stores this setting. This repair gives your Windows account permission to read, create, change, and delete values inside that one WebView2 policy key. Windows protects the whole key rather than individual values, so other programs running as your account could also change values in that key. The repair will not change any Registry value, any machine-wide policy, any administrator deny rule, your WhatsApp data, or your chat content. Only a small repair helper runs as administrator, while NVDA and WhatsApp stay unelevated. The permission stays in place after you restart Windows or remove the add-on. Do you want to continue to the Windows permission request?"
+						"WhatsApp Web Plus Companion needs a temporary WebView2 launch setting before starting WhatsApp. Windows is blocking the per-user Registry key that stores this setting. This repair gives your Windows account permission to read, create, change, and delete values inside that one WebView2 policy key. Windows protects the whole key rather than individual values, so other programs running as your account could also change values in that key. The repair will not change any Registry value, any machine-wide policy, any administrator deny rule, your WhatsApp data, or your chat content. Only a small repair helper runs as administrator, while NVDA and WhatsApp stay unelevated. The permission stays in place after you restart Windows or remove the add-on. Do you want to continue to the Windows permission request?",
 					),
 					# Translators: Title of the WebView2 policy permission repair confirmation dialog.
 					_("Repair per-user WebView2 policy permissions?"),
@@ -946,7 +948,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 					# Translators: Affirmative button that continues to the Windows permission request.
 					label=_("&Continue to User Account Control"),
 					callback=self._startRegistryRepair,
-				)
+				),
 			)
 		except Exception:
 			log.exception("Unexpected WhatsApp Web Plus Companion repair confirmation failure")
@@ -975,8 +977,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		# Translators: Progress before the Windows permission request appears.
 		self._announce(
 			_(
-				"Opening the Windows permission request. NVDA will keep running without administrator privileges."
-			)
+				"Opening the Windows permission request. NVDA will keep running without administrator privileges.",
+			),
 		)
 		try:
 			identity = captureRequestIdentity()
@@ -1010,7 +1012,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				gui.mainFrame,
 				_(
 					# Translators: Warning shown before force closing all supported Microsoft Store WhatsApp processes.
-					"This will immediately close every running Microsoft Store WhatsApp app, including Stable and Beta. Active calls and file transfers will be interrupted. Text you have not sent may be lost. Do you want to continue?"
+					"This will immediately close every running Microsoft Store WhatsApp app, including Stable and Beta. Active calls and file transfers will be interrupted. Text you have not sent may be lost. Do you want to continue?",
 				),
 				# Translators: Title of the Microsoft Store WhatsApp force-close confirmation dialog.
 				_("Force close WhatsApp applications?"),
@@ -1026,7 +1028,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				# Translators: Destructive confirmation button that closes all supported WhatsApp processes.
 				label=_("&Force close"),
 				callback=self._startForceClose,
-			)
+			),
 		)
 
 	def _startForceClose(self, _payload: Payload) -> None:
@@ -1046,7 +1048,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				self._updateDuplicateAnnounced = True
 				# Translators: Status when a second update request is made while one is still running.
 				self._announceUpdateWhilePending(
-					_("A WhatsApp Web Plus userscript update check is already in progress.")
+					_("A WhatsApp Web Plus userscript update check is already in progress."),
 				)
 			return
 		self._updateOperationToken += 1
@@ -1066,7 +1068,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		# Translators: Progress after the user requests an update check that automatically installs a newer bundle.
 		self._announceUpdateWhilePending(
 			_(
-				"Checking for WhatsApp Web Plus userscript updates. If the official userscript has a newer version or different content, the Companion will download and install it automatically."
+				"Checking for WhatsApp Web Plus userscript updates. If the official userscript has a newer version or different content, the Companion will download and install it automatically.",
 			),
 			updateToken,
 		)
@@ -1258,7 +1260,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				message,
 				# Translators: Title for a dialog that shows the most recent companion or update result.
 				_("WhatsApp Web Plus Companion last result"),
-			)
+			),
 		)
 
 	# Translators: Command description in NVDA's Input Gestures dialog.

@@ -1,6 +1,10 @@
 # Set default behaviour, in case users don't have core.autocrlf set.
 * text=auto
 
+# The packaged userscript is verified by an exact SHA-256 digest at runtime.
+# Treat it as a byte-exact asset so Git never normalizes its mixed line endings.
+addon/globalPlugins/whatsappWebPlusCompanion/resources/whatsapp_web_plus.user.js -text -diff
+
 # Try to ensure that po files in the repo does not include
 # source code line numbers.
 # Every person expected to commit po files should change their personal config file as described here:

@@ -125,7 +125,7 @@ class WebSocket:
 				sock.close()
 			raise LoaderError("websocket.handshake", type(error).__name__) from error
 		expected = base64.b64encode(
-			hashlib.sha1((key + _GUID).encode("ascii"), usedforsecurity=False).digest()
+			hashlib.sha1((key + _GUID).encode("ascii"), usedforsecurity=False).digest(),
 		).decode("ascii")
 		connectionTokens = {item.strip().lower() for item in headers.get("connection", "").split(",")}
 		if (

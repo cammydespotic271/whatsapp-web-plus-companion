@@ -23,7 +23,7 @@ CHANNELS = MappingProxyType(
 			"5319275A.51895FA4EA97F_cv1g1gvanyjgm!App",
 			"5319275A.51895FA4EA97F_cv1g1gvanyjgm",
 		),
-	}
+	},
 )
 
 EXPECTED_ORIGIN = "https://web.whatsapp.com"

@@ -554,7 +554,7 @@ def readCompanionAnnouncements(
 				"returnByValue": True,
 			},
 			deadline=2.0,
-		)
+		),
 	)
 	if not isinstance(value, dict) or value.get("contractVersion") != 2:
 		raise LoaderError("cdp.announcement")
@@ -613,7 +613,7 @@ def readCompanionAnnouncements(
 				language=language,
 				privacy=privacy,
 				text=text,
-			)
+			),
 		)
 		previousSequence = sequence
 	return CompanionAnnouncementBatch(
@@ -648,12 +648,12 @@ def installAndVerify(
 				"expression": f"({{origin:location.origin,top:window===window.top,health:globalThis.__whatsappWebPlusLoaderHealth||null,sentinel:globalThis.__whatsappWebPlusLoader||null,readiness:globalThis.{_READINESS_PROPERTY}||null}})",
 				"returnByValue": True,
 			},
-		)
+		),
 	)
 	if not isinstance(probe, dict) or probe.get("origin") != EXPECTED_ORIGIN or probe.get("top") is not True:
 		raise LoaderError("cdp.context")
 	if (probe.get("health") is not None or probe.get("sentinel") is not None) and probe.get(
-		"readiness"
+		"readiness",
 	) is None:
 		raise LoaderError("bundle.healthMismatch")
 	registration = session.request("Page.addScriptToEvaluateOnNewDocument", {"source": readinessWrapper})
@@ -670,7 +670,7 @@ def installAndVerify(
 			session.request(
 				"Runtime.evaluate",
 				{"expression": readinessWrapper, "returnByValue": True},
-			)
+			),
 		)
 	injectionRequested = probe.get("health") is not None or probe.get("sentinel") is not None
 	healthEnd = (
@@ -688,7 +688,7 @@ def installAndVerify(
 					"expression": f"({{health:globalThis.__whatsappWebPlusLoaderHealth||null,sentinel:globalThis.__whatsappWebPlusLoader||null,readiness:globalThis.{_READINESS_PROPERTY}||null}})",
 					"returnByValue": True,
 				},
-			)
+			),
 		)
 		if not isinstance(status, dict):
 			continue
@@ -720,7 +720,7 @@ def installAndVerify(
 						"Runtime.evaluate",
 						{"expression": injectionWrapper, "returnByValue": True},
 						cancelEvent=cancelEvent,
-					)
+					),
 				)
 			except LoaderError as error:
 				if error.code == "cdp.evaluate":
@@ -762,7 +762,7 @@ def installAndVerify(
 						),
 						"returnByValue": True,
 					},
-				)
+				),
 			)
 			if (
 				isinstance(postInstall, dict)

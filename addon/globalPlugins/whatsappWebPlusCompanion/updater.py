@@ -147,7 +147,7 @@ def fetchLatestVersion(
 			SCRIPT_METADATA_URL,
 			_MAX_METADATA_BYTES,
 			cancelEvent,
-		)
+		),
 	)
 
 
