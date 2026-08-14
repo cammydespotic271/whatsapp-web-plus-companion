@@ -1,0 +1,13 @@
+{
+  "name": "whatsapp-web-plus-companion",
+  "version": "2026.08.14",
+  "license": "GPL-2.0-or-later",
+  "private": true,
+  "scripts": {
+    "sync:userscript": "node scripts/sync-userscript.mjs",
+    "test:python": "uv run python -m unittest discover -s tests -v",
+    "lint": "uv run ruff check . && uv run ruff format --check .",
+    "build": "uv run scons",
+    "test": "npm run test:python && npm run lint && npm run build"
+  }
+}

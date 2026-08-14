@@ -1,0 +1,362 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: whatsappWebPlusCompanion 2026.08.14\n"
+"PO-Revision-Date: 2026-08-10 00:00+0700\n"
+"Last-Translator: Muhammad Gagah\n"
+"Language-Team: English\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "WhatsApp Web Plus Companion"
+msgstr "WhatsApp Web Plus Companion"
+
+msgid "Bring fast keyboard navigation and clearer screen-reader feedback from WhatsApp Web Plus to Microsoft Store WhatsApp Stable and Beta. The Companion securely loads a bundled, verified userscript and restores the connection automatically when WhatsApp replaces its renderer."
+msgstr "Bring fast keyboard navigation and clearer screen-reader feedback from WhatsApp Web Plus to Microsoft Store WhatsApp Stable and Beta. The Companion securely loads a bundled, verified userscript and restores the connection automatically when WhatsApp replaces its renderer."
+
+msgid "WhatsApp {channel} is running with WhatsApp Web Plus Companion."
+msgstr "WhatsApp {channel} is running with WhatsApp Web Plus Companion."
+
+msgid "WhatsApp Web Plus Companion is already running. Close WhatsApp first."
+msgstr "WhatsApp Web Plus Companion is already running. Close WhatsApp first."
+
+msgid "WhatsApp {channel} was closed. WhatsApp Web Plus Companion stopped."
+msgstr "WhatsApp {channel} was closed. WhatsApp Web Plus Companion stopped."
+
+msgid "WhatsApp is already running. Close it normally and try again."
+msgstr "WhatsApp is already running. Close it normally and try again."
+
+msgid "WhatsApp Web Plus Companion launch was cancelled."
+msgstr "WhatsApp Web Plus Companion launch was cancelled."
+
+msgid "The companion connection was lost. Close WhatsApp, then launch it again."
+msgstr "The companion connection was lost. Close WhatsApp, then launch it again."
+
+msgid "Unlock Windows and run a normal, non-administrator copy of NVDA, then try again."
+msgstr "Unlock Windows and run a normal, non-administrator copy of NVDA, then try again."
+
+msgid "Install the selected WhatsApp channel from Microsoft Store, then try again."
+msgstr "Install the selected WhatsApp channel from Microsoft Store, then try again."
+
+msgid "The Companion is still cleaning up after the previous launch. Wait a moment and try again. If the problem continues, restart NVDA."
+msgstr "The Companion is still cleaning up after the previous launch. Wait a moment and try again. If the problem continues, restart NVDA."
+
+msgid "The temporary WebView2 setting could not be restored. Restart NVDA before trying again."
+msgstr "The temporary WebView2 setting could not be restored. Restart NVDA before trying again."
+
+msgid "WhatsApp opened, but the companion could not connect. Close WhatsApp and try again."
+msgstr "WhatsApp opened, but the companion could not connect. Close WhatsApp and try again."
+
+msgid "The bundled WhatsApp Web Plus userscript did not start. Close WhatsApp and try again."
+msgstr "The bundled WhatsApp Web Plus userscript did not start. Close WhatsApp and try again."
+
+msgid "The downloaded WhatsApp Web Plus userscript did not start and was disabled. Close WhatsApp, then launch it again through the Companion to use the packaged fallback."
+msgstr "The downloaded WhatsApp Web Plus userscript did not start and was disabled. Close WhatsApp, then launch it again through the Companion to use the packaged fallback."
+
+msgid "WhatsApp Web Plus Companion could not start. Close WhatsApp and try again."
+msgstr "WhatsApp Web Plus Companion could not start. Close WhatsApp and try again."
+
+msgid "Beta"
+msgstr "Beta"
+
+msgid "Stable"
+msgstr "Stable"
+
+msgid "Launching WhatsApp {channel} with WhatsApp Web Plus Companion."
+msgstr "Launching WhatsApp {channel} with WhatsApp Web Plus Companion."
+
+msgid "Launch WhatsApp Stable with WhatsApp Web Plus Companion"
+msgstr "Launch WhatsApp Stable with WhatsApp Web Plus Companion"
+
+msgid "Launch WhatsApp Beta with WhatsApp Web Plus Companion"
+msgstr "Launch WhatsApp Beta with WhatsApp Web Plus Companion"
+
+msgid "Launch the last selected WhatsApp channel with WhatsApp Web Plus Companion"
+msgstr "Launch the last selected WhatsApp channel with WhatsApp Web Plus Companion"
+
+msgid "Report the last WhatsApp Web Plus Companion result"
+msgstr "Report the last WhatsApp Web Plus Companion result"
+
+msgid "No WhatsApp Web Plus Companion result is available yet."
+msgstr "No WhatsApp Web Plus Companion result is available yet."
+
+msgid "&WhatsApp Web Plus Companion"
+msgstr "&WhatsApp Web Plus Companion"
+
+msgid "Launch WhatsApp &Stable with WhatsApp Web Plus Companion"
+msgstr "Launch WhatsApp &Stable with WhatsApp Web Plus Companion"
+
+msgid "Launch WhatsApp &Beta with WhatsApp Web Plus Companion"
+msgstr "Launch WhatsApp &Beta with WhatsApp Web Plus Companion"
+
+msgid "Launch the &last selected WhatsApp channel with WhatsApp Web Plus Companion"
+msgstr "Launch the &last selected WhatsApp channel with WhatsApp Web Plus Companion"
+
+msgid "&Report the last WhatsApp Web Plus Companion result"
+msgstr "&Report the last WhatsApp Web Plus Companion result"
+
+msgid "&Check for WhatsApp Web Plus userscript updates"
+msgstr "&Check for WhatsApp Web Plus userscript updates"
+
+msgid "Check for and install WhatsApp Web Plus userscript updates"
+msgstr "Check for and install WhatsApp Web Plus userscript updates"
+
+msgid "Check for WhatsApp Web Plus userscript updates and automatically install a newer or changed official version in the Companion"
+msgstr "Check for WhatsApp Web Plus userscript updates and automatically install a newer or changed official version in the Companion"
+
+msgid "WhatsApp Web Plus userscript was updated from version {currentVersion} to {latestVersion}. The new version will be used the next time WhatsApp is launched through the Companion."
+msgstr "WhatsApp Web Plus userscript was updated from version {currentVersion} to {latestVersion}. The new version will be used the next time WhatsApp is launched through the Companion."
+
+msgid "WhatsApp Web Plus userscript was refreshed at version {currentVersion} because the official script differed from the Companion bundle. The refreshed version will be used the next time WhatsApp is launched through the Companion."
+msgstr "WhatsApp Web Plus userscript was refreshed at version {currentVersion} because the official script differed from the Companion bundle. The refreshed version will be used the next time WhatsApp is launched through the Companion."
+
+msgid "The WhatsApp Web Plus userscript is up to date at version {currentVersion}."
+msgstr "The WhatsApp Web Plus userscript is up to date at version {currentVersion}."
+
+msgid "The WhatsApp Web Plus userscript update could not be downloaded. Check your internet connection and try again. The existing Companion bundle was not changed."
+msgstr "The WhatsApp Web Plus userscript update could not be downloaded. Check your internet connection and try again. The existing Companion bundle was not changed."
+
+msgid "The downloaded WhatsApp Web Plus userscript update could not be verified. The existing Companion bundle was not changed."
+msgstr "The downloaded WhatsApp Web Plus userscript update could not be verified. The existing Companion bundle was not changed."
+
+msgid "The verified WhatsApp Web Plus userscript update could not be installed. The existing Companion bundle was not changed."
+msgstr "The verified WhatsApp Web Plus userscript update could not be installed. The existing Companion bundle was not changed."
+
+msgid "The WhatsApp Web Plus userscript could not be updated. The existing Companion bundle was not changed."
+msgstr "The WhatsApp Web Plus userscript could not be updated. The existing Companion bundle was not changed."
+
+msgid "A WhatsApp Web Plus userscript update check is already in progress."
+msgstr "A WhatsApp Web Plus userscript update check is already in progress."
+
+msgid "The userscript bundle cannot be updated in this NVDA context. Use a normal NVDA session."
+msgstr "The userscript bundle cannot be updated in this NVDA context. Use a normal NVDA session."
+
+msgid "Checking for WhatsApp Web Plus userscript updates. If the official userscript has a newer version or different content, the Companion will download and install it automatically."
+msgstr "Checking for WhatsApp Web Plus userscript updates. If the official userscript has a newer version or different content, the Companion will download and install it automatically."
+
+msgid "WhatsApp Web Plus Companion last result"
+msgstr "WhatsApp Web Plus Companion last result"
+
+msgid "Some WhatsApp Web Plus announcements were skipped while reconnecting."
+msgstr "Some WhatsApp Web Plus announcements were skipped while reconnecting."
+
+msgid "Launch or force close Microsoft Store WhatsApp, and manage WhatsApp Web Plus userscript updates."
+msgstr "Launch or force close Microsoft Store WhatsApp, and manage WhatsApp Web Plus userscript updates."
+
+msgid "Force close &all Microsoft Store WhatsApp processes..."
+msgstr "Force close &all Microsoft Store WhatsApp processes..."
+
+msgid "Force close all running Microsoft Store WhatsApp Stable and Beta processes"
+msgstr "Force close all running Microsoft Store WhatsApp Stable and Beta processes"
+
+msgid "WhatsApp is already being force closed. Wait for the result."
+msgstr "WhatsApp is already being force closed. Wait for the result."
+
+msgid "Neither WhatsApp Stable nor WhatsApp Beta from Microsoft Store was running."
+msgstr "Neither WhatsApp Stable nor WhatsApp Beta from Microsoft Store was running."
+
+msgid "The Companion force closed every running Microsoft Store WhatsApp Stable and Beta process. It closed {closedCount} in total."
+msgstr "The Companion force closed every running Microsoft Store WhatsApp Stable and Beta process. It closed {closedCount} in total."
+
+msgid "The Companion force closed {closedCount} Microsoft Store WhatsApp processes, but WhatsApp {remainingChannels} may still be running. Restart Windows before launching the Companion again."
+msgstr "The Companion force closed {closedCount} Microsoft Store WhatsApp processes, but WhatsApp {remainingChannels} may still be running. Restart Windows before launching the Companion again."
+
+msgid "The Companion could not force close WhatsApp {remainingChannels} from Microsoft Store or confirm that it had closed. Restart Windows before launching the Companion again."
+msgstr "The Companion could not force close WhatsApp {remainingChannels} from Microsoft Store or confirm that it had closed. Restart Windows before launching the Companion again."
+
+msgid "The Companion cannot force close WhatsApp in this NVDA session. Unlock Windows and run NVDA normally, not as administrator."
+msgstr "The Companion cannot force close WhatsApp in this NVDA session. Unlock Windows and run NVDA normally, not as administrator."
+
+msgid "Stable and Beta"
+msgstr "Stable and Beta"
+
+msgid "This will immediately close every running Microsoft Store WhatsApp app, including Stable and Beta. Active calls and file transfers will be interrupted. Text you have not sent may be lost. Do you want to continue?"
+msgstr "This will immediately close every running Microsoft Store WhatsApp app, including Stable and Beta. Active calls and file transfers will be interrupted. Text you have not sent may be lost. Do you want to continue?"
+
+msgid "Force close WhatsApp applications?"
+msgstr "Force close WhatsApp applications?"
+
+msgid "&Keep WhatsApp open"
+msgstr "&Keep WhatsApp open"
+
+msgid "&Force close"
+msgstr "&Force close"
+
+msgid "Closing all running WhatsApp Stable and Beta apps from Microsoft Store."
+msgstr "Closing all running WhatsApp Stable and Beta apps from Microsoft Store."
+
+msgid "The Companion could not safely access the Windows Registry. Restart NVDA and try again. If the problem continues, report the error."
+msgstr "The Companion could not safely access the Windows Registry. Restart NVDA and try again. If the problem continues, report the error."
+
+msgid "Windows could not confirm whether another Companion operation was using the Registry. Restart NVDA and try again. If the problem continues, report the error."
+msgstr "Windows could not confirm whether another Companion operation was using the Registry. Restart NVDA and try again. If the problem continues, report the error."
+
+msgid "Windows blocked access to the computer-wide WebView2 policy setting. Contact your administrator."
+msgstr "Windows blocked access to the computer-wide WebView2 policy setting. Contact your administrator."
+
+msgid "The computer-wide WebView2 policy setting could not be checked. Contact your administrator or report the error."
+msgstr "The computer-wide WebView2 policy setting could not be checked. Contact your administrator or report the error."
+
+msgid "A Windows policy controls the WebView2 launch settings for this WhatsApp channel. The Companion cannot override the policy, so it left the settings unchanged. Contact your administrator for help."
+msgstr "A Windows policy controls the WebView2 launch settings for this WhatsApp channel. The Companion cannot override the policy, so it left the settings unchanged. Contact your administrator for help."
+
+msgid "A Windows policy controls the WebView2 launch settings for all applications. The Companion cannot override the policy, so it left the settings unchanged. Contact your administrator for help."
+msgstr "A Windows policy controls the WebView2 launch settings for all applications. The Companion cannot override the policy, so it left the settings unchanged. Contact your administrator for help."
+
+msgid "Windows blocked access to the per-user WebView2 policy setting required by the Companion. In NVDA Tools, open WhatsApp Web Plus Companion and choose Diagnose and repair WebView2 policy permissions, then try again."
+msgstr "Windows blocked access to the per-user WebView2 policy setting required by the Companion. In NVDA Tools, open WhatsApp Web Plus Companion and choose Diagnose and repair WebView2 policy permissions, then try again."
+
+msgid "The per-user WebView2 policy setting could not be read. Close WhatsApp and try again. If this continues, report the error."
+msgstr "The per-user WebView2 policy setting could not be read. Close WhatsApp and try again. If this continues, report the error."
+
+msgid "An existing per-user WebView2 launch setting has an unsupported data type. The Companion did not change it. Review the setting manually."
+msgstr "An existing per-user WebView2 launch setting has an unsupported data type. The Companion did not change it. Review the setting manually."
+
+msgid "A remote-debugging launch argument already exists for this WhatsApp channel. The Companion did not overwrite it. Permission repair does not remove settings the Companion cannot prove it owns."
+msgstr "A remote-debugging launch argument already exists for this WhatsApp channel. The Companion did not overwrite it. Permission repair does not remove settings the Companion cannot prove it owns."
+
+msgid "Windows did not allow the Companion to create or update its temporary per-user WebView2 launch setting. WhatsApp was not launched. Run Diagnose and repair WebView2 policy permissions from the Companion submenu, then try again."
+msgstr "Windows did not allow the Companion to create or update its temporary per-user WebView2 launch setting. WhatsApp was not launched. Run Diagnose and repair WebView2 policy permissions from the Companion submenu, then try again."
+
+msgid "The temporary per-user WebView2 launch setting could not be created or updated. WhatsApp was not launched. Close WhatsApp and try again. If this continues, report the error."
+msgstr "The temporary per-user WebView2 launch setting could not be created or updated. WhatsApp was not launched. Close WhatsApp and try again. If this continues, report the error."
+
+msgid "The temporary per-user WebView2 launch setting could not be written. WhatsApp was not launched. Close WhatsApp and try again. If this continues, report the error."
+msgstr "The temporary per-user WebView2 launch setting could not be written. WhatsApp was not launched. Close WhatsApp and try again. If this continues, report the error."
+
+msgid "The temporary WebView2 launch setting could not be verified after it was written. Close WhatsApp and try again."
+msgstr "The temporary WebView2 launch setting could not be verified after it was written. Close WhatsApp and try again."
+
+msgid "The Companion could not restore the previous per-user WebView2 setting. Close WhatsApp now, then run Diagnose and repair WebView2 policy permissions. The Companion will retry the saved restoration before another launch."
+msgstr "The Companion could not restore the previous per-user WebView2 setting. Close WhatsApp now, then run Diagnose and repair WebView2 policy permissions. The Companion will retry the saved restoration before another launch."
+
+msgid "The previous per-user WebView2 setting could not be opened for restoration. Close WhatsApp and report the error."
+msgstr "The previous per-user WebView2 setting could not be opened for restoration. Close WhatsApp and report the error."
+
+msgid "The Companion could not remove its temporary per-user WebView2 setting. Close WhatsApp now, then run Diagnose and repair WebView2 policy permissions. The Companion will retry the saved restoration before another launch."
+msgstr "The Companion could not remove its temporary per-user WebView2 setting. Close WhatsApp now, then run Diagnose and repair WebView2 policy permissions. The Companion will retry the saved restoration before another launch."
+
+msgid "The temporary per-user WebView2 setting could not be removed. Close WhatsApp and report the error."
+msgstr "The temporary per-user WebView2 setting could not be removed. Close WhatsApp and report the error."
+
+msgid "The previous per-user WebView2 setting could not be written back. Close WhatsApp and report the error."
+msgstr "The previous per-user WebView2 setting could not be written back. Close WhatsApp and report the error."
+
+msgid "The per-user WebView2 setting changed outside the Companion while it was active. The Companion did not overwrite it. Review the per-user WebView2 policy setting manually."
+msgstr "The per-user WebView2 setting changed outside the Companion while it was active. The Companion did not overwrite it. Review the per-user WebView2 policy setting manually."
+
+msgid "The restored per-user WebView2 setting could not be verified. Close WhatsApp and review the per-user WebView2 policy setting manually."
+msgstr "The restored per-user WebView2 setting could not be verified. Close WhatsApp and review the per-user WebView2 policy setting manually."
+
+msgid "A saved WebView2 restoration record could not be verified for this Windows account. The Companion did not change it. Contact your administrator or restore the per-user WebView2 policy setting manually."
+msgstr "A saved WebView2 restoration record could not be verified for this Windows account. The Companion did not change it. Contact your administrator or restore the per-user WebView2 policy setting manually."
+
+msgid "Diagnose and repair WebView2 &policy permissions..."
+msgstr "Diagnose and repair WebView2 &policy permissions..."
+
+msgid "Check the per-user WebView2 policy permissions and offer a repair when the Companion cannot use them"
+msgstr "Check the per-user WebView2 policy permissions and offer a repair when the Companion cannot use them"
+
+msgid "Diagnose and repair WebView2 policy permissions"
+msgstr "Diagnose and repair WebView2 policy permissions"
+
+msgid "Checking WebView2 policy permissions."
+msgstr "Checking WebView2 policy permissions."
+
+msgid "Opening the Windows permission request. NVDA will keep running without administrator privileges."
+msgstr "Opening the Windows permission request. NVDA will keep running without administrator privileges."
+
+msgid "Repair per-user WebView2 policy permissions?"
+msgstr "Repair per-user WebView2 policy permissions?"
+
+msgid "WhatsApp Web Plus Companion needs a temporary WebView2 launch setting before starting WhatsApp. Windows is blocking the per-user Registry key that stores this setting. This repair gives your Windows account permission to read, create, change, and delete values inside that one WebView2 policy key. Windows protects the whole key rather than individual values, so other programs running as your account could also change values in that key. The repair will not change any Registry value, any machine-wide policy, any administrator deny rule, your WhatsApp data, or your chat content. Only a small repair helper runs as administrator, while NVDA and WhatsApp stay unelevated. The permission stays in place after you restart Windows or remove the add-on. Do you want to continue to the Windows permission request?"
+msgstr "WhatsApp Web Plus Companion needs a temporary WebView2 launch setting before starting WhatsApp. Windows is blocking the per-user Registry key that stores this setting. This repair gives your Windows account permission to read, create, change, and delete values inside that one WebView2 policy key. Windows protects the whole key rather than individual values, so other programs running as your account could also change values in that key. The repair will not change any Registry value, any machine-wide policy, any administrator deny rule, your WhatsApp data, or your chat content. Only a small repair helper runs as administrator, while NVDA and WhatsApp stay unelevated. The permission stays in place after you restart Windows or remove the add-on. Do you want to continue to the Windows permission request?"
+
+msgid "&Keep current permissions"
+msgstr "&Keep current permissions"
+
+msgid "&Continue to User Account Control"
+msgstr "&Continue to User Account Control"
+
+msgid "The required WebView2 policy permissions are already available. No changes were made."
+msgstr "The required WebView2 policy permissions are already available. No changes were made."
+
+msgid "Close WhatsApp before diagnosing WebView2 policy permissions."
+msgstr "Close WhatsApp before diagnosing WebView2 policy permissions."
+
+msgid "WhatsApp is currently running. The Companion must force close all Microsoft Store WhatsApp Stable and Beta processes before it can diagnose WebView2 policy permissions. Active calls and file transfers will be interrupted, and text you have not sent may be lost. Do you want to force close WhatsApp and continue the diagnosis? If a repair is needed, you will review a separate confirmation before Windows asks for administrator approval."
+msgstr "WhatsApp is currently running. The Companion must force close all Microsoft Store WhatsApp Stable and Beta processes before it can diagnose WebView2 policy permissions. Active calls and file transfers will be interrupted, and text you have not sent may be lost. Do you want to force close WhatsApp and continue the diagnosis? If a repair is needed, you will review a separate confirmation before Windows asks for administrator approval."
+
+msgid "Close WhatsApp to continue diagnosis?"
+msgstr "Close WhatsApp to continue diagnosis?"
+
+msgid "&Force close WhatsApp and continue"
+msgstr "&Force close WhatsApp and continue"
+
+msgid "Force closing Microsoft Store WhatsApp Stable and Beta processes before continuing diagnosis."
+msgstr "Force closing Microsoft Store WhatsApp Stable and Beta processes before continuing diagnosis."
+
+msgid "Diagnose and repair requires a normal, non-administrator NVDA session with Windows unlocked."
+msgstr "Diagnose and repair requires a normal, non-administrator NVDA session with Windows unlocked."
+
+msgid "The WebView2 policy permissions could not be diagnosed. Close WhatsApp and try again. If this continues, contact your administrator."
+msgstr "The WebView2 policy permissions could not be diagnosed. Close WhatsApp and try again. If this continues, contact your administrator."
+
+msgid "A permission repair is available. Review the confirmation dialog to continue or keep the current permissions."
+msgstr "A permission repair is available. Review the confirmation dialog to continue or keep the current permissions."
+
+msgid "No permission change was made."
+msgstr "No permission change was made."
+
+msgid "The repair helper is missing. Reinstall the add-on."
+msgstr "The repair helper is missing. Reinstall the add-on."
+
+msgid "The repair helper could not be verified. Reinstall the add-on from a trusted source."
+msgstr "The repair helper could not be verified. Reinstall the add-on from a trusted source."
+
+msgid "Windows blocked the permission repair. Contact your administrator."
+msgstr "Windows blocked the permission repair. Contact your administrator."
+
+msgid "The permission repair did not finish. Run the diagnosis again before trying again."
+msgstr "The permission repair did not finish. Run the diagnosis again before trying again."
+
+msgid "No compatible repair helper is available for this computer."
+msgstr "No compatible repair helper is available for this computer."
+
+msgid "The permission repair could not verify this NVDA session. No change was made."
+msgstr "The permission repair could not verify this NVDA session. No change was made."
+
+msgid "Your Windows user profile is not available. Stay logged in and try again."
+msgstr "Your Windows user profile is not available. Stay logged in and try again."
+
+msgid "An administrator deny rule still blocks the WebView2 policy key. The repair did not remove or weaken that rule. Contact your administrator."
+msgstr "An administrator deny rule still blocks the WebView2 policy key. The repair did not remove or weaken that rule. Contact your administrator."
+
+msgid "The permission repair could not change the Registry permissions. Contact your administrator."
+msgstr "The permission repair could not change the Registry permissions. Contact your administrator."
+
+msgid "The permission repair could not be applied. No Registry values were changed."
+msgstr "The permission repair could not be applied. No Registry values were changed."
+
+msgid "The permission repair could not be verified and the original permissions were restored. Contact your administrator."
+msgstr "The permission repair could not be verified and the original permissions were restored. Contact your administrator."
+
+msgid "The permission repair could not restore the original Registry permissions after an error. Do not launch WhatsApp through the Companion until an administrator reviews the per-user WebView2 policy key."
+msgstr "The permission repair could not restore the original Registry permissions after an error. Do not launch WhatsApp through the Companion until an administrator reviews the per-user WebView2 policy key."
+
+msgid "WebView2 policy permissions were repaired for your Windows account. No Registry values were changed. Try launching WhatsApp through the Companion again."
+msgstr "WebView2 policy permissions were repaired for your Windows account. No Registry values were changed. Try launching WhatsApp through the Companion again."
+
+msgid "The permission repair reported success but access is still blocked. Do not launch WhatsApp through the Companion. Contact your administrator."
+msgstr "The permission repair reported success but access is still blocked. Do not launch WhatsApp through the Companion. Contact your administrator."
+
+msgid "A saved WebView2 setting was restored after the repair. You can launch WhatsApp through the Companion again."
+msgstr "A saved WebView2 setting was restored after the repair. You can launch WhatsApp through the Companion again."
+
+msgid "A saved WebView2 setting changed outside the Companion. The Companion did not overwrite it. Review the per-user WebView2 policy setting manually."
+msgstr "A saved WebView2 setting changed outside the Companion. The Companion did not overwrite it. Review the per-user WebView2 policy setting manually."
+
+msgid "Clearer force-close dialog wording and more natural WebView2 policy guidance, with validated automatic userscript updates, safe packaged fallback, accessible close-and-continue permission diagnosis, and compatibility with NVDA 2024.1 through 2026.1."
+msgstr "Clearer force-close dialog wording and more natural WebView2 policy guidance, with validated automatic userscript updates, safe packaged fallback, accessible close-and-continue permission diagnosis, and compatibility with NVDA 2024.1 through 2026.1."
